@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-level content view for the layout fragment sample.  This version is
+     for display when not in landscape: we can only fit the list of titles. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment class="com.example.fragmentoct2019.MainActivity$TitlesFragment"
+            android:background="#edf789"
+            android:id="@+id/titles"
+            android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>
+
