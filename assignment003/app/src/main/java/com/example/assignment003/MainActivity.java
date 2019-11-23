@@ -1,64 +1,36 @@
 package com.example.assignment003;
-import android.content.Intent;
+
+import android.app.AlertDialog;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDialog;
 
+import app.com.sample.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+public class MainActivity extends AppCompatDialog {
+    String[] names = {"India", "Brazil", "Argentina",
+            "Portugal", "France", "England", "Italy"};
+    ArrayAdapter<String> adapter;
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-
-        button1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent myIntent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
-
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
-        button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
-
-
     }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button1:
-                Intent myIntent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
-                MainActivity .this.startActivity(myIntent);
-            break;
-            case R.id.button2:
-                Intent myIntent2 = new Intent(Settings.ACTION_SOUND_SETTINGS);
-                MainActivity .this.startActivity(myIntent2);
-                break;
-            case R.id.button3:
-                Intent myIntent3 = new Intent(Settings.ACTION_VOICE_INPUT_SETTINGS);
-                MainActivity .this.startActivity(myIntent3);                break;
-            case R.id.button4:
-                Intent myIntent4 = new Intent(Settings.ACTION_DATE_SETTINGS);
-                MainActivity .this.startActivity(myIntent4);
-                break;
-            case R.id.button5:
-                Toast.makeText(this, "Button 5 clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
+    public void openDialog(View v){
+        AlertDialog.Builder alertDialog = new
+                AlertDialog.Builder(this);
+        View rowList = getLayoutInflater().inflate(R.layout.row, null);
+        listView = rowList.findViewById(R.id.listView);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, names);
+        listView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+        alertDialog.setView(rowList);
+        AlertDialog dialog = alertDialog.create();
+        dialog.show();
     }
 }

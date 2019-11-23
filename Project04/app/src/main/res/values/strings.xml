@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Andronym</string>
+
+
+    <string name="hello_world">Hello world!</string>
+        <string name="action_settings">Settings</string>
+        <string-array name="alpha_array">
+            <item>A</item>
+            <item>B</item>
+            <item>C</item>
+            <item>D</item>
+            <item>E</item>
+            <item>F</item>
+            <item>G</item>
+            <item>H</item>
+            <item>I</item>
+            <item>J</item>
+            <item>K</item>
+            <item>L</item>
+            <item>M</item>
+            <item>N</item>
+            <item>O</item>
+            <item>P</item>
+            <item>Q</item>
+            <item>R</item>
+            <item>S</item>
+            <item>T</item>
+            <item>U</item>
+            <item>V</item>
+            <item>W</item>
+            <item>X</item>
+            <item>Y</item>
+
+            <item>Z</item>
+        </string-array>
+        <string-array name="quotes_array">
+            <item>A: Andrew Minai-Despite the struggles Andrew Minai is a person who is willing to keep on pushing forward and never give up.</item>
+            <item>B:Bacon-cured meat from the sides and belly of a pig, having distinct strips of fat and typically served in thin slices.
+
+</item>
+            <item>C:Car-a road vehicle, typically with four wheels, powered by an internal combustion engine and able to carry a small number of people.</item>
+            <item>D:Dog- is a pet for humanns</item>
+            <item>E:Economy- the wealth and resources of a country or region, especially in terms of the production and consumption of goods and services.</item>
+            <item>F:Farm- is apart of land where you can grow your human resources </item>
+            <item>H:Hair-is a attribute apart of the human body </item>
+            <item>I:Iron-Form a mental image or concept of.</item>
+            <item>J:Jeans-Is a set of clothes that you wear</item>
+            <item>K: King-Is the person that rules over a kingdom</item>
+            <item>L: Lime-is a citrus fruit, which is typically round, green in color, 3–6 centimetres (1.2–2.4 in) in diameter, and contains acidic juice vesicles.
+</item>
+            <item>M: Mango-a fleshy, oval, yellowish-red tropical fruit that is eaten ripe or used green for pickles or chutneys</item>
+            <item>N: Number-an arithmetical value, expressed by a word, symbol, or figure, representing a particular quantity and used in counting and making calculations and for showing order in a series or for identification</item>
+            <item>O:Objective-of a person or their judgment) not influenced by personal feelings or opinions in considering and representing facts. </item>
+            <item>P:Poem- a piece of writing that partakes of the nature of both speech and song that is nearly always rhythmical, usually metaphorical, and often exhibits such formal elements as meter, rhyme, and stanzaic structure.",
+            </item>
+            <item>Q: Quantum-Theory-a theory of matter and energy based on the concept of quanta, especially quantum mechanics</item>
+            <item>R: React.js-A JavaScript library that help you build front end web applications</item>
+            <item>S:Sun-the star around which the earth orbits. </item>
+            <item>T: TA-Teachers assistant which a teacher with grading homework and tests</item>
+            <item>U: Universe-all existing matter and space considered as a whole; the cosmos.</item>
+            <item>V: VIM- A text editor that is built within the computer for development</item>
+            <item>W:Winning-The action of victory in a competition.
+ </item>
+            <item>X:Xbox-Gaming console made by Microsoft </item>
+            <item>Y:Year- is the time taken by a planet to make one revolution around the sun.</item>
+            <item>""</item>
+            <item>""</item>
+            <item>Z:Zero-0 is 0 (zero) is both a number and the numerical digit used to represent that number in numerals. The number 0 fulfills a central role in mathematics as the additive identity of the integers, real numbers, and many other algebraic structures. </item>
+
+
+
+
+
+
+
+        </string-array>
+    </resources>

@@ -46,7 +46,7 @@ public class ItemGridAdapter extends RecyclerView.Adapter<ItemGridAdapter.GridVi
         holder.imgGrid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, getListMountain().get(position).getName() + " clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, getListMountain().get(position).getName() +  " clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }
